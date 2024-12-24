@@ -1,5 +1,5 @@
 /*
- * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ * Copyright 1999-2024 Alibaba Group Holding Ltd.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,19 +15,10 @@
  */
 package com.alibaba.csp.sentinel.block.flow.param;
 
-import org.junit.runner.RunWith;
+import com.alibaba.csp.sentinel.util.TimeUtil;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
 
-import com.alibaba.csp.sentinel.util.TimeUtil;
-
-/**
- * Mock support for {@link TimeUtil}.
- *
- * @author jason
- */
-@RunWith(MockitoJUnitRunner.class)
 public abstract class AbstractTimeBasedTest {
 
     private long currentMillis = 0;
